@@ -1,1 +1,3 @@
-# data_warehouse_DE23_kristofer_fangrat
+# Data warehouse lifecycle course
+
+I learn datawarehouse here
