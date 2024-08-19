@@ -1,0 +1,5 @@
+[connection.dwh_course]
+account_name = nn13465.west-europe.azure
+username = kristoferfangrat
+password = TfiaiyfhGnqEM8Q
+warehousename = COMPUTE_WH
