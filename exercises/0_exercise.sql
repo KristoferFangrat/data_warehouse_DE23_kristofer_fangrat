@@ -67,7 +67,7 @@ LIMIT 20;
 //i) Lets see how popular spotify is around the world.
 //List the top 10 number countries and the number of searches for spotify. 
 //For now it's okay to list the country codes, 
-//later we'll join this with the actual country to get more useful information to the stakeholders."""
+//later we'll join this with the actual country to get more useful information to the stakeholders.
 
 SELECT COUNTRY, COUNT(COUNTRY) AS number_searches
 FROM GOOGLE_KEYWORDS
