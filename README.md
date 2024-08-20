@@ -1,8 +1,8 @@
-# Data warehouse lifecycle course
+# Data warehouse lifecycle course<br>
 
-I learn data warehouse here
+I learn data warehouse here<br>
 
-20/8
+20/8<br>
 
 cd .. - cd = change directory flyttas du upp i nivån <br>
 cd "mappnamn" går i en katalog <br>
