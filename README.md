@@ -16,5 +16,5 @@ mkdir skapar en katalog
 rmdir tar bort en katalog
 
 git add . lägger till 
-git commit "meddelande"
+git commit -m "meddelande" (-m = message)
 git push
