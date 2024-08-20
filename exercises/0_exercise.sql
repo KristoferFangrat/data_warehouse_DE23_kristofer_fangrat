@@ -56,7 +56,7 @@ FROM GOOGLE_KEYWORDS
 GROUP BY PLATFORM
 ORDER BY number_users DESC; //how many users per platform = 35046855
 
-//   h) Let's dive into what swedish people are searching. 
+//h) Let's dive into what swedish people are searching. 
 //Find the 20 most popular keywords and the number of searches of that keyword.
 SELECT KEYWORD, COUNT(KEYWORD) AS number_keywords
 FROM GOOGLE_KEYWORDS
@@ -64,11 +64,10 @@ WHERE COUNTRY IN ('752')
 GROUP BY KEYWORD
 ORDER BY number_keywords DESC
 LIMIT 20;
-
 //i) Lets see how popular spotify is around the world.
 //List the top 10 number countries and the number of searches for spotify. 
 //For now it's okay to list the country codes, 
-//later we'll join this with the actual country to get more useful information to the stakeholders.
+//later we'll join this with the actual country to get more useful information to the stakeholders."""
 
 SELECT COUNTRY, COUNT(COUNTRY) AS number_searches
 FROM GOOGLE_KEYWORDS
