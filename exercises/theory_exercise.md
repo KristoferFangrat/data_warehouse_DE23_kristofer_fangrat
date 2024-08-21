@@ -79,3 +79,17 @@ Summary
 The storage layer in Snowflake is where all data is stored and managed, offering flexibility, security, and scalability. As a beginner, it's important to understand that the storage layer is not just about having a place to store data, but also about how this data is optimized, protected, and made available for future processing and analysis.
 
 Having a basic understanding of the storage layer will help you better leverage Snowflake's features and capabilities, as well as make informed decisions when working with large datasets in a cloud-based environment.
+
+  c) What is the purpose of the compute layer in Snowflake?
+
+  d) How does the cloud services layer enhance the functionality of Snowflake?
+
+  e) What is a virtual warehouse in Snowflake, and how does it differ from a traditional data warehouse?
+
+  f) When are the cases you would want to scale up versus scaling out in terms of virtual warehouses and compute resources.
+
+  g) How does Snowflake's pricing model differ from traditional on-premise data warehousing solutions?
+
+  h) What is the difference between pay-as-you-go and upfront storage, and when you should you choose one over the other?
+
+  i) Explain the concept of Time Travel and Fail-safe in Snowflake and its use cases
