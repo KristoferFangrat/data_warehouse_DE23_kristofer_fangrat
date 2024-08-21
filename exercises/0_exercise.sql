@@ -73,10 +73,10 @@ LIMIT 20;
 --For now it's okay to list the country codes, 
 --later we'll join this with the actual country to get more useful information to the stakeholders.
 
-SELECT COUNTRY, COUNT(COUNTRY) AS number_searches
+SELECT COUNTRY, KEYWORD, COUNT(COUNTRY) AS number_searches
 FROM GOOGLE_KEYWORDS
-WHERE KEYWORD IN ('spotify')
-GROUP BY COUNTRY
+WHERE KEYWORD IN ('spotify', 'Spotify', 'SPOTIFY')
+GROUP BY COUNTRY, KEYWORD
 ORDER BY number_searches DESC
 LIMIT 10;
 
@@ -101,7 +101,7 @@ SELECT
 FROM
     GOOGLE_KEYWORDS
 WHERE
-    KEYWORD = 'spotify'
+    KEYWORD IN ('spotify', 'Spotify', 'SPOTIFY')
 GROUP BY
     COUNTRY,
     KEYWORD
