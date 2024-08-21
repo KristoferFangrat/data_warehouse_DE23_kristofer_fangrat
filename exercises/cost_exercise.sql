@@ -24,15 +24,18 @@ SELECT 4*1*30 AS total_cost_warehouse_C;
 SELECT 3.90*(1*10*30 + 2*2*30 + 4*1*30) AS total_cost;
 -- TOTAL_COST = 2106
 
---d) Your Snowflake warehouse uses auto-scaling. For the first 10 days, it operates on 2 clusters for 10 hours per day.
-SELECT 2*3.9*10*10 AS total_cost_10_days;
--- TOTAL_COST_10_DAYS = 780
--- For the next 10 days, it scales up to 3 clusters for 10 hours per day.
-SELECT 3*3.9*10*10 AS total_cost_10_days;
--- TOTAL_COST_10_DAYS = 1170
--- For the last 10 days, it scales up to 4 clusters for 10 hours per day.
-SELECT 4*3.9*10*10 AS total_cost_10_days;
--- TOTAL_COST_10_DAYS = 1560
--- Calculate the total monthly budget. Assume the warehouse consumes 1 credit per hour per cluster.
-SELECT 3.9*(2*10*10 + 3*10*10 + 4*10*10) AS total_cost;
--- TOTAL_COST = 3510
+-- Första 10 dagarna: 2 kluster, 10 timmar per dag
+SELECT 2 * 3.9 * 10 * 10 AS total_cost_first_10_days;
+-- RESULTAT: TOTAL_COST_FIRST_10_DAYS = 780
+
+-- Nästa 10 dagarna: 3 kluster, 10 timmar per dag
+SELECT 3 * 3.9 * 10 * 10 AS total_cost_next_10_days;
+-- RESULTAT: TOTAL_COST_NEXT_10_DAYS = 1170
+
+-- Sista 10 dagarna: 4 kluster, 10 timmar per dag
+SELECT 4 * 3.9 * 10 * 10 AS total_cost_last_10_days;
+-- RESULTAT: TOTAL_COST_LAST_10_DAYS = 1560
+
+-- Beräkna den totala månadskostnaden
+SELECT 3.9 * (2 * 10 * 10 + 3 * 10 * 10 + 4 * 10 * 10) AS total_monthly_cost;
+-- RESULTAT: TOTAL_MONTHLY_COST = 3510
