@@ -124,3 +124,5 @@ In summary, the compute layer in Snowflake is responsible for all data processin
   Time travel: Allows you to access and query historical versions of data within a specified retention period. It's useful for recovering from mistakes, auditing changes, or analyzing past data states.
   Fail-safe: Provides s 7-day recovery period for data that was deleted or lost due to system failures. It ensures data can be restored in case of emergencies or significant issues.
   Use cases: Use time travel to revert data to a previous state or investigate changes, and fail-safe for critical data recovery after data loss or corruption.
+
+  Anteckningar:
