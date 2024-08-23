@@ -1,4 +1,5 @@
 USE ROLE ice_cream_writer;
+USE ROLE ice_cream_analyst;
 
 USE WAREHOUSE dev_wh;
 use schema ice_cream_db.public;

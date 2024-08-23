@@ -36,7 +36,7 @@ snowflake object - a "snowflake object" refers to any database object that you c
 3. Tables: STructures that store data in rows and columns.
 4. Views: Virtual tables that are based on the result of a SQL query.
 5. Stages: Locations where data is stored temporarily before loading into tables.
-6. FIle formats: Definitions for how data files are structured (e.g. CSV, JSON).
+6. File formats: Definitions for how data files are structured (e.g. CSV, JSON).
 Summary: Snowflake objects, are the various entities you create within Snowflake's enviroment, such as database, tables and views, which help organize, store, and manage your data. These objects are essential for building and maintaning your data warehouse.
 schema - is a description, represented by objects such as tables and indexes, of how data relates logically within data warehouse. Star, galaxy and Snowflake schema are types of warehouse schema that describe different logical arrangements of data.
 permanent table	- store data on long term storage, or disk drives. The data exists permanently and other SQL client session can see or edit the data.
@@ -58,12 +58,12 @@ LOCK - Table control concurrency.
 CALL - Call a PL/SQL or JAVA subprogram.
 EXPLAIN PLAN - Describe the access path to data.
 DDL - (Data definition language) is a set of SQL commands used to define, create, modify and delete the structure of a database objects, such as tables and schemas. It focuses on the database schema rather than the data itself and is typically used by database administrators rather than general users.
-CREATE - creates mew datanase pbkects. sicj as tables, views, indexes or databases
+CREATE - creates new database objects, such as tables, views, indexes or databases
 ALTER - modifies the structure of an existing database object, like adding or dropping columns in a table.
-DROP - USed to delete database objects like tables, views or entire database.
+DROP - Used to delete database objects like tables, views or entire database.
 TRUNCATE - Removes all access from a table, but the table structure remains intact.
-COMMENT - cjamge tje ma,e pf am exostomg database object.
-RENAME - Add comments to the data dictionary for documentation purposes.
+COMMENT - Add comments to the data dictionary for documentation purposes.
+RENAME - Change the name of an existing database object.
 
 DQL	- (Data query language) DQL statements are used for performing queries ojn the data within schema objects. The purpose of the DQL command is to get some schema relation based on the query passed to it.
 We can define DQL as follows it as a component of SQL statement that aLlows getting data from the database and imposing order upon it. It includes the SELECT statement.
