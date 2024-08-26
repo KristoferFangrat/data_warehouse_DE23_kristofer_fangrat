@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     print(working_directory)
 
-    data = list(load_snowflake_resource(working_directory / "data" / "iFood.xlsx", encoding="latin1"))
+    data = list(load_snowflake_resource(working_directory / "data" / "iFood.xlsx"))
 
     # print the data yielded from resource
     print(data)
