@@ -76,7 +76,7 @@ Data interaction: Uses snowflake to run queries, analyze data and generate repor
 Security and compliance: Adheres to access controls and security policies to ensure data integrity and confidentially.
 SNowflake users play a key role in leveraging the capabliities of the snowflake platform to manage and analyze data, ensuring that data operations are performed securely and effectively througouut the data warehouse lifecycle.
 **staging layer** - Is a temporary area in a data warehouse where raw data is initially loaded and stored before being processed. It acts as an intermediate storage space for data extracted from various sources, allowing for initial cleansing and transformation tasks before the data is moved to the more permanent data storage layers.
-SUmmary:
+Summary:
 Initial data storage: Temporarily holds raw, unprocessed data from different sources.
 Data preparation: Facilitates premilinary data cleansing and transformation to ensure consistency and quality before moving to the core data warehouse.
 Performance optimaziation: Helps manage and streamline data loading processes, improving overall data integration efficiency.
@@ -131,6 +131,6 @@ Source DLT is essential for establishing effective data pipelines and ensuring t
 Summary:
 Yield is useful for:
 Data Processing: Efficiently handling large volumes of data by processing one item at a time without loading the entire dataset into memory.
-Streaming Data: Supporting real-time data ingestion and transformation by allowing for incremental data processing.
+**Streaming Data**: Supporting real-time data ingestion and transformation by allowing for incremental data processing.
 Resource Optimization: Reducing memory consumption and improving performance during data extraction and transformation tasks.
 Using yield in Python helps manage and process data more efficiently, especially in scenarios involving large datasets or continuous data streams.
