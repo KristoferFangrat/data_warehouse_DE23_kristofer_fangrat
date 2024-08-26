@@ -10,4 +10,5 @@ secrets.toml
 *.wal
 
 setup_user_role.sql
+
 setup_database.sql
