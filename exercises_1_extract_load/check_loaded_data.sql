@@ -1,0 +1,10 @@
+USE ROLE marketing_dlt_role;
+
+USE DATABASE ifood;
+
+SHOW SCHEMAS;
+
+SHOW TABLES IN SCHEMA staging;
+
+USE SCHEMA STAGING;
+

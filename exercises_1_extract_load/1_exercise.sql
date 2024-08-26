@@ -18,6 +18,10 @@ GRANT USAGE ON WAREHOUSE dev_wh TO ROLE ice_cream_analyst;
 
 GRANT USAGE ON DATABASE ice_cream_db TO ROLE ice_cream_analyst;
 
+GRANT USAGE ON SCHEMA ice_cream_db.public TO ROLE ice_cream_analyst;
+
+GRANT SELECT ON ALL TABLES IN SCHEMA ice_cream_db.public TO ROLE ice_cream_analyst;
+
 GRANT CREATE VIEW ON SCHEMA ice_cream_db.public TO ROLE ice_cream_analyst;
 
 GRANT CREATE TABLE ON SCHEMA ice_cream_db.public TO ROLE ice_cream_analyst;
@@ -31,6 +35,8 @@ SHOW FUTURE GRANTS IN SCHEMA ice_cream_db.public;
 GRANT ROLE ice_cream_analyst TO USER kristoferfangrat;
 
 USE ROLE ice_cream_analyst;
+
+USE DATABASE ice_cream_db;
 
 SHOW GRANTS TO ROLE ice_cream_analyst;
 
