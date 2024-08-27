@@ -13,23 +13,22 @@ def load_snowflake_resource(file_path: str, **kwargs):
 if __name__ == "__main__":
     working_directory = Path(__file__).parent
     os.chdir(working_directory)
-    # specify the pipeline name, destination and dataset name when configuring pipeline,
-    # otherwise the defaults will be used that are derived from the current script name
+
     pipeline = dlt.pipeline(
         pipeline_name='load_snowflake',
         destination='snowflake',
-        dataset_name='staging', # schema
+        dataset_name='staging',  # schema
     )
 
-    print(working_directory)
+    file_path = working_directory / "data" / "iFood.xlsx"
+    if not file_path.exists():
+        raise FileNotFoundError(f"File {file_path} does not exist")
 
-    data = list(load_snowflake_resource(working_directory / "data" / "iFood.xlsx"))
+    data = list(load_snowflake_resource(file_path))
 
-    # print the data yielded from resource
-    print(data)
+    print(data)  # Debugging: Print the data to ensure it's loaded correctly.
 
-    # run the pipeline with your parameters
-    load_info = pipeline.run(data, table_name="marketing_data")
+    load_info = pipeline.run(data, table_name="marketing_data")  # You can change "marketing_data" to any table name you want.
 
-    # pretty print the information on data that was loaded
-    print(load_info)
+    print(load_info)  # Print information about the load process.
+
