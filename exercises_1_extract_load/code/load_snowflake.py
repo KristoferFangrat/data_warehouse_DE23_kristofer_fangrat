@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 
 
-@dlt.resource(write_disposition="append")
+@dlt.resource(write_disposition="replace")
 def load_snowflake_resource(file_path: str, **kwargs):
     df = pd.read_excel(file_path, **kwargs)
     yield df.to_dict(orient="records")

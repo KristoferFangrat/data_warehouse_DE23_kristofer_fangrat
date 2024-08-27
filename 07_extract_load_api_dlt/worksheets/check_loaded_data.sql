@@ -11,3 +11,5 @@ SELECT headline, EMPLOYER__WORKPLACE,
 FROM staging.data_field_job_ads;
 
 SELECT * FROM staging.data_field_job_ads;
+
+SELECT count(*) FROM data_field_job_ads;

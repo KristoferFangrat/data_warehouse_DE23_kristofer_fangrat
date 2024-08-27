@@ -46,8 +46,6 @@ GRANT ROLE marketing_dlt_role TO USER extract_loader;
 -- - USAGE on marketing_wh
 GRANT USAGE ON WAREHOUSE marketing_wh TO ROLE marketing_dlt_role;
 
-
-
 -- - USAGE on ifood
 
 GRANT USAGE ON DATABASE ifood TO ROLE marketing_dlt_role;

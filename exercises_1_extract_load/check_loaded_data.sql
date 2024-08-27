@@ -12,3 +12,7 @@ USE WAREHOUSE marketing_wh;
 SELECT * FROM marketing_data;
 
 SHOW TABLES IN SCHEMA STAGING;
+
+SHOW TABLES LIKE '_DLT_LOADS';
+
+SHOW TABLES LIKE 'marketing_data';
