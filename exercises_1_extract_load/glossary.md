@@ -98,7 +98,7 @@ Access control: Help manage and review the delegation of access rights, ensuring
 Userstanding "granted by" helps in maintaining clear and accountable permission management, contributing to overall scurity and compliance within the data warehouse environment.
 **secrets.toml** - Is a configuration file used to securely store and manage sensitive information, such as API keys, database credentials and other secrets. This file is typically written in TOML (Tom's obvious minimal language) format and is designed to keep sensitive data out of version control systems and other public repositories.
 Summary:
-SEcure credential management: Store and manage sensitive configuration details needed for data warehouse operations, such as database credentials and API keys.
+Secure credential management: Store and manage sensitive configuration details needed for data warehouse operations, such as database credentials and API keys.
 Access control: Ensure that sensitive information is protected and only accessible by authorized users or systems.
 Configuration management: Simplify and secure the configuration of data pipeline components, ETL processes and other integration tools that interact with the data warehouse.
 Using .toml helps maintain security and compliance by keeping sensitive information confidential and properly managed throughout the data warehouse lifecycle.

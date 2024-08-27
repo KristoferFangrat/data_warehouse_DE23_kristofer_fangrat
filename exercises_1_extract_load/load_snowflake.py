@@ -7,7 +7,7 @@ import os
 @dlt.resource(write_disposition="append")
 def load_snowflake_resource(file_path: str, **kwargs):
     df = pd.read_excel(file_path, **kwargs)
-    yield df.to_dict(orient="index")
+    yield df.to_dict(orient="records")
 
 
 if __name__ == "__main__":
