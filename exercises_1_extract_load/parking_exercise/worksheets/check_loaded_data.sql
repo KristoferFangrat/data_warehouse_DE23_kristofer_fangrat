@@ -8,3 +8,5 @@ USE WAREHOUSE parking_wh;
 SHOW TABLES;
 
 SELECT * FROM parking_data LIMIT 10;
+
+SELECT COUNT(*) FROM parking_data;
