@@ -36,6 +36,7 @@ GRANT USAGE ON SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 GRANT CREATE TABLE ON SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 GRANT INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 GRANT INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA ifood.staging TO ROLE marketing_dlt_role;
+GRANT SELECT ON ALL TABLES IN SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 
 --e) Assign marketing_dlt_role to extract_loader user.
 

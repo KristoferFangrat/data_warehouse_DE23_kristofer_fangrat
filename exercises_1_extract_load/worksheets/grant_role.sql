@@ -9,6 +9,9 @@ GRANT USAGE ON DATABASE ifood TO ROLE marketing_dlt_role;
 -- Grant usage on schema
 GRANT USAGE ON SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 
+GRANT SELECT ON ALL TABLES IN SCHEMA ifood.staging TO ROLE marketing_dlt_role;
+GRANT SELECT ON FUTURE TABLES IN SCHEMA ifood.staging TO ROLE marketing_dlt_role;
+
 -- Grant create table on schema
 GRANT CREATE TABLE ON SCHEMA ifood.staging TO ROLE marketing_dlt_role;
 

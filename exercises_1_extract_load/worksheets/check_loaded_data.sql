@@ -16,3 +16,8 @@ SHOW TABLES IN SCHEMA STAGING;
 SHOW TABLES LIKE '_DLT_LOADS';
 
 SHOW TABLES LIKE 'marketing_data';
+
+SELECT * FROM marketing_data LIMIT 10;
+SELECT INDEX, income FROM marketing_data LIMIT 10;
+
+DESCRIBE TABLE marketing_data;
