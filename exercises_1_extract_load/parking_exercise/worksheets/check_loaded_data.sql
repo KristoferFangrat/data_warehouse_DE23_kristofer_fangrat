@@ -3,6 +3,7 @@ USE ROLE parking_dlt_role;
 USE DATABASE parking;
 
 USE SCHEMA parking.staging;
+USE SCHEMA parking.staging_mc;
 USE WAREHOUSE parking_wh;
 
 SHOW TABLES;
@@ -10,13 +11,3 @@ SHOW TABLES;
 SELECT * FROM parking_data LIMIT 10;
 
 SELECT COUNT(*) FROM parking_data;
-
-SELECT
-    PROPERTIES__CITY_DISTRICT AS CITY_DISTRICT,
-    PROPERTIES__STREET_NAME AS STREET_NAME,
-    PROPERTIES__PARKING_RATE AS PARKING_RATE
-FROM 
-    parking_data
-WHERE
-    PROPERTIES__CITY_DISTRICT IN ('Östermalm', 'Kungsholmen', 'Södermalm')
-LIMIT 10;
