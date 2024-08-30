@@ -16,6 +16,3 @@ LEFT JOIN
     jd ON ja.id = jd.id
 LEFT JOIN
     e ON ja.id = e.id
-
--- -- c01df9ad570026d3bb4d233842b4bf0f
---Vinter is seeking an exceptional individual
