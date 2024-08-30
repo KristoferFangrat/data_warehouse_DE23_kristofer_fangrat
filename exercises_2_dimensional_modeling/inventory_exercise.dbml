@@ -1,0 +1,30 @@
+Table fct_inventory {
+  fct_inventory_id INTEGER [primary key]
+  stock_level VARCHAR(20)
+  reorder_quantity INTEGER
+  date_id INTEGER [ref: > dim_date.date_id]
+  warehouse_id INTEGER [ref: > dim_warehouse.warehouse_id]
+  product_id INTEGER [ref: > dim_product.product_id]
+}
+
+Table dim_date {
+  date_id INTEGER [primary key]
+  day_name VARCHAR(20)
+  day DAY
+  month_name VARCHAR(20)
+  month MONTH 
+  year YEAR
+}
+
+Table dim_warehouse {
+  warehouse_id INTEGER [primary key]
+  warehouse_name VARCHAR(30)
+  location VARCHAR(30)
+}
+
+Table dim_product {
+  product_id INTEGER [primary key]
+  product_name VARCHAR(30)
+  category_name VARCHAR(30)
+  supplier_name VARCHAR(30)
+}
