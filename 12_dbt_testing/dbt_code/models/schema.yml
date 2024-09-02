@@ -1,0 +1,13 @@
+models:
+  - name: dim_employer
+    columns:
+      - name: employer_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: workplace_city
+        data_tests:
+          - not_null
+
+        # TODO: add more tests ...

@@ -10,6 +10,6 @@ SELECT
     employment_type,
     duration,
     salary_type,
-    scope_of_work_min,
+    scope_of_work_min AS scope_of_work_min,
     scope_of_work_max
-FROM src_job_details
+FROM src_job_details 

@@ -11,10 +11,10 @@ SELECT
     id,
     employer__name AS employer_name,
     employer__workplace AS employer_workplace,
-    workplace_address__city AS workplace_city,
+    employer__organization_number AS organization_number,
     workplace_address__street_address AS street_address,
+    workplace_address__region AS workplace_region,
     workplace_address__postcode AS workplace_postcode,
-    workplace_address__country AS workplace_country,
-    workplace_address__country_code AS workplace_country_code,
-    employer__organization_number AS organization_number
+    workplace_address__city AS workplace_city,
+    workplace_address__country AS workplace_country
 FROM stg_job_ads
