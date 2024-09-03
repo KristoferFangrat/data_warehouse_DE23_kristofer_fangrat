@@ -64,3 +64,62 @@ models:
 
           
    # TODO: more tests ...
+models:
+  - name: dim_auxillary_attributes
+    columns:
+      - name: auxillary_attributes_id
+        data_tests:
+          - unique
+          - not_null
+      - name: experience_required
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['True', 'False']
+      - name: driving_license_required
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['True', 'False']
+      - name: access_to_own_car
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['True', 'False']
+      - name: duration
+        data_tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 365
+      - name: application_deadline
+        data_tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: '2023-01-01'
+              max_value: '2023-12-31'
+          - dbt_expectations.expect_column_values_to_be_in_the_future
+
+  - name: fct_job_ads
+    columns:
+      - name: job_details_key
+        data_tests:
+          - unique
+          - not_null
+      - name: job_title
+        data_tests:
+          - not_null
+      - name: company_name
+        data_tests:
+          - not_null
+      - name: job_location
+        data_tests:
+          - not_null
+      - name: salary
+        data_tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: integer
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 30000
+              max_value: 200000
