@@ -9,6 +9,9 @@ USE WAREHOUSE dev_wh;
 
 CREATE SCHEMA IF NOT EXISTS ice_cream_db_exercise.staging;
 
-USE SCHEMA staging;
+CREATE SCHEMA IF NOT EXISTS ice_cream_db_exercise.warehouse;
+
+USE SCHEMA ice_cream_db_exercise.staging;
+USE SCHEMA ice_cream_db_exercise.warehouse;
 
 -- b) Use dlt to load the data into snowflake.

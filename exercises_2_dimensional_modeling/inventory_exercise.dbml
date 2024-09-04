@@ -10,10 +10,11 @@ Table fct_inventory {
 Table dim_date {
   date_id INTEGER [primary key]
   day_name VARCHAR(20)
-  day DAY
+  day INTEGER
   month_name VARCHAR(20)
-  month MONTH 
-  year YEAR
+  month INTEGER
+  quarter STRING
+  year INTEGER
 }
 
 Table dim_warehouse {
