@@ -41,4 +41,4 @@ SHOW GRANTS ON SCHEMA ice_cream_db_exercise.warehouse;
 SHOW FUTURE GRANTS IN SCHEMA ice_cream_db_exercise.warehouse;
 
 SHOW GRANTS TO ROLE ice_cream_dlt_role;
-SHOW GRANTS TO ROLE ice_cream_loader;
+SHOW GRANTS TO USER ice_cream_loader;
