@@ -24,6 +24,7 @@ GRANT SELECT,
 INSERT,
 UPDATE,
 DELETE ON FUTURE TABLES IN SCHEMA job_ads.warehouse TO ROLE job_ads_dbt_role;
+
 GRANT SELECT ON FUTURE VIEWS IN SCHEMA job_ads.warehouse TO ROLE job_ads_dbt_role;
 USE ROLE job_ads_dbt_role;
 USE WAREHOUSE dev_wh;
