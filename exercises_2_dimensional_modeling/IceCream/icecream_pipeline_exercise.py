@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 
 
-@dlt.resource(write_disposition="append")
+@dlt.resource(write_disposition="replace")
 def load_snowflake_resource(file_path: str, **kwargs):
     df = pd.read_csv(file_path, **kwargs)
     yield df.to_dict(orient="records")
@@ -23,13 +23,13 @@ if __name__ == "__main__":
 
     print(working_directory)
 
-    data = list(load_snowflake_resource(working_directory / "data" / "bj" / "products.csv", encoding="latin1"))
+    data = list(load_snowflake_resource(working_directory / "data" / "bj" / "products.csv", encoding="utf-8"))
 
     # print the data yielded from resource
     print(data)
 
     # run the pipeline with your parameters
-    load_info = pipeline.run(data, table_name="IceCream")
+    load_info = pipeline.run(data, table_name="ICE_CREAM_PRODUCTS")
 
     # pretty print the information on data that was loaded
     print(load_info)

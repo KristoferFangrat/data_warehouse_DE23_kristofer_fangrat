@@ -8,6 +8,6 @@ USE ROLE ACCOUNTADMIN;
 USE ROLE USERADMIN;
 USE ROLE ice_cream_dlt_role;
 
-SELECT * FROM Ice_Cream;
+SELECT * FROM ICE_CREAM_REVIEWS LIMIT 100;
 
 SHOW TABLES IN SCHEMA ice_cream_db_exercise.staging;
