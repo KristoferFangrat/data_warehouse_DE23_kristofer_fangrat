@@ -10,4 +10,3 @@ secrets.toml
 *.wal
 
 setup_user.sql
-eda_icecream.sql
