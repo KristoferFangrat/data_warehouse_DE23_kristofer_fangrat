@@ -1,0 +1,29 @@
+Table fct_reviews {
+  fct_reviews_id INTERGER [primary key]
+  rating INTEGER [not null]
+  stars INTEGER
+  authors_id INTEGER [ref: > dim_authors.authors_id]
+  products_id INTEGER [ref: > dim_products.products_id]
+  review_id INTEGER [ref: > dim_review.review_id]
+
+}
+
+Table dim_authors {
+  authors_id INTEGER [primary key]
+  name VARCHAR(30) [not null]
+}
+
+Table dim_products {
+  products_id INTEGER [primary key]
+  product_name VARCHAR(50) [not null]
+  ingredients VARCHAR(200) [not null]
+  description VARCHAR (150) [not null]
+
+}
+
+Table dim_review {
+review_id INTEGER [primary key]
+title VARCHAR(100) [not null]
+text VARCHAR(200)
+date DATETIME
+}
