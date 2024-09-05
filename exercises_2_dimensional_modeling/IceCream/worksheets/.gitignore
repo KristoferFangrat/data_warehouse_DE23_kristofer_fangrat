@@ -8,6 +8,3 @@ secrets.toml
 # ignore duckdb
 *.duckdb
 *.wal
-
-setup_user.sql
-eda_icecream.sql

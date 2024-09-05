@@ -1,0 +1,8 @@
+sources:
+    - name: ice_cream_db_exercise
+      schema: staging
+      tables: 
+        - name: stg_data_ice_cream_reviews
+          identifier: ICE_CREAM_REVIEWS
+        - name: stg_data_ice_cream_products
+          identifier: ICE_CREAM_PRODUCTS
