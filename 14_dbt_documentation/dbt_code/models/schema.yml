@@ -1,6 +1,6 @@
 models:
   - name: dim_employer
-    description: "Information about the employer such as name, workplace address, organisation number, ..."
+    description: "Information about the employer such as name, workplace address, organisation number, etc"
     columns:
       - name: employer_id
         description: "Primary key, a surrogate key generated based on the columns id, employer_name."
@@ -62,3 +62,35 @@ models:
 
           
    # TODO: more tests ...
+version: 2
+
+models:
+  - name: mart_job_listings
+    columns:
+      - name: headline
+        data_tests:
+          - not_null
+      - name: vacancies
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1, 2, 3, 4, 5]
+      - name: employer_name
+        data_tests:
+          - not_null
+          - unique
+      - name: job_details_key
+        data_tests:
+          - relationships:
+              to: ref('dim_job_details')
+              field: job_details_id
+      - name: employer_key
+        data_tests:
+          - relationships:
+              to: ref('dim_employer')
+              field: employer_id
+      - name: auxillary_attributes_key
+        data_tests:
+          - relationships:
+              to: ref('dim_auxillary_attributes')
+              field: auxillary_attributes_id
