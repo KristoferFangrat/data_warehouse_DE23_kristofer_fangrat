@@ -94,4 +94,3 @@ models:
           - relationships:
               to: ref('dim_auxillary_attributes')
               field: auxillary_attributes_id
-   # TODO: more tests ...
