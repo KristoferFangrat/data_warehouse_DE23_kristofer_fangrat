@@ -14,8 +14,8 @@ SELECT
     jd."description",
     aa.experience_required,
     aa.driving_license_required
-
-FROM ja
+FROM 
+    ja
 LEFT JOIN
     jd ON ja.id = jd.id
 LEFT JOIN
