@@ -15,3 +15,6 @@ USE SCHEMA ice_cream_db_exercise.staging;
 USE SCHEMA ice_cream_db_exercise.warehouse;
 
 -- b) Use dlt to load the data into snowflake.
+
+
+
