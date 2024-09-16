@@ -1,5 +1,8 @@
 sources:
   - name: ice_cream_db_exercise
+    description: "This is the source for the ice cream database"
     tables:
       - name: ICE_CREAM_PRODUCTS
+        description: "This table contains the ice cream products"
       - name: ICE_CREAM_REVIEWS
+        description: "This table contains the ice cream reviews"
