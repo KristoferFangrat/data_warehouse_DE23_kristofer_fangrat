@@ -20,7 +20,7 @@ Data get updated with different frequencies. Stakeholders rely on data that lead
 
 Meet the data warehouse:
 Different data sources (upstream), it goes to the data warehouse, here the transformation starts (downstream) and we can use the data to serve (downstream) the BI visualization, ML models, analytics.
-Datawarehouse is a central repository. With data from disparate sources. Consistent and comprehensive data analysis. Current and historical data in one place. This is different from OLTP systems, we keep the historical data to analyze the data over time. Data warehouse is a OLAP contrast to OLTP. Separations from operations, data warehouse data is separated from the operational databases we do the analysis in the data warehouse. It does not impact the performance operational system.
+Data warehouse is a central repository. With data from disparate sources. Consistent and comprehensive data analysis. Current and historical data in one place. This is different from OLTP systems, we keep the historical data to analyze the data over time. Data warehouse is a OLAP contrast to OLTP. Separations from operations, data warehouse data is separated from the operational databases we do the analysis in the data warehouse. It does not impact the performance operational system.
 Scalable:
 Horizontally
 Vertically
